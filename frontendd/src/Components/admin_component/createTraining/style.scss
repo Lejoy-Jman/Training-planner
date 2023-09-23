@@ -1,0 +1,275 @@
+$primary-background:rgb(25,16,91);
+$navbar:linear-gradient(#19105b, #472067, #7c3375, #ff6196);
+
+
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.container {
+  max-width: 960px;
+}
+
+
+h3 {
+  color: $primary-background !important;
+}
+
+.icon{
+  color: #ff6196 !important;
+  border: none !important;
+  background:none !important;
+}
+
+/* Nav bar */
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  background: $navbar;
+  width: 10%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    flex-direction: row;
+    height: 10vh;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Style for the text elements inside the horizontal sidebar */
+.sidebar p {
+    margin: 0; 
+
+}
+}
+
+.welcomeAdmin {
+  color: white;
+  font-size: 20px;
+  margin-top: 50%;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.content {
+  margin-left: 10%;
+  padding: 20px;
+}
+
+.logout-btn-div {
+  width: 100%;
+}
+
+.logOut {
+  background: none !important;
+  border: none !important;
+  width: 100% !important;
+  color: white !important;
+  margin-bottom: 5% !important;
+}
+
+.reqfield{
+  color: rgb(139, 9, 9);
+  font-weight: bolder;
+}
+.headings{
+  margin-top: 2% !important;
+}
+
+
+// table 
+#table-responsive{
+  width: 100% !important;
+}
+.add{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1%;
+}
+
+.create{
+  background-color: #ff6196 !important;
+  color: white !important;
+  border: none !important;
+  margin: 4% 0% !important;
+  padding: 2px 15px !important;
+}
+h1{
+  color: #19105b !important;
+}
+/* maincontent */
+@media (min-width: 768px) {
+  .maincontent {
+    margin: 7% 0 0 0%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .maincontent {
+    margin: 10% 0 0 15%;
+  }
+}
+
+@media (max-width: 767px) {
+  .maincontent {
+    margin: 10% 0 0 10%;
+  }
+}
+.modal-header{
+  background-color: #19105b !important;
+  color: #ccc !important;
+}
+/* buttons */
+._button {
+  background-color: #ff6196 !important;
+  color: white;
+  border: none !important;
+  width: 100%;
+  margin-top: 5%;
+ 
+
+}
+.button_{
+  margin-top: 3%;
+  background-color: #ff6196 !important;
+  border: none !important;
+  padding: 8px 25px !important;
+  transform: skewX(-15deg);
+}
+
+.schedule{
+  width: 100%;
+  background-color: #ff6196 !important;
+  border: none !important;
+}
+
+/* Admin page all styles */
+
+button[type="submit"]:hover {
+  background-color: $primary-background  !important;
+}
+
+.close {
+  color: white;
+  border: none;
+  padding: 8px 25px !important;
+  float: right;
+  font-size: 5%;
+  margin-top: 3%;
+  cursor: pointer;
+  transform: skewX(-15deg);
+  background-color: $primary-background  !important;
+  border-color: $primary-background  !important;
+}
+
+form {
+  margin-left: 0  !important;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+  resize: none;
+  min-width: 50px;
+  max-height: 200px; /* You can adjust this value as needed */
+}
+
+/* Style form labels */
+label {
+  font-weight: bold;
+}
+
+.time{
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* Style form inputs and textarea */
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.end{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+@media(min-width: 280px) and (max-width: 375px){
+  .col-lg-9{
+    margin-left: -25px;
+   
+  }
+  .sidebar{
+    position: absolute;
+  }
+}
+
+
+.active-page{
+  background-color: #ff6196 !important;
+  border: none !important;
+  color: #ccc !important;
+
+}
+.inactive-page{
+  background-color: white !important;
+  border: none !important;
+  color: black!important;
+}
+.pagination{
+  margin-left: 40%;
+}
+
+.newtrainer{
+  background-color: #19105b !important;
+  border: none !important;
+  padding: 2px 15px !important;
+}
